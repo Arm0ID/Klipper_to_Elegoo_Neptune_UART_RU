@@ -175,4 +175,5 @@ console=serial
 4. Пишем `reboot` - чтобы перезагрузить одноплатник.
 
 ## Источник
-![Тык](https://www.printables.com/model/841472-elegoo-neptune-3-pro-klipper-upgrade-with-btt-pi-v)
+
+[Тык](https://www.printables.com/model/841472-elegoo-neptune-3-pro-klipper-upgrade-with-btt-pi-v)
