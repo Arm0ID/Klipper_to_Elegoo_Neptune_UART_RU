@@ -57,14 +57,15 @@ make menuconfig
   4. Настроим конфигуратор:
 		Разные версии Klipper-а будут слегка отличаться, но основные пункты останутся:
 
-> [ * ]Enable extre low-level configuration options
-> Micro-controller Architecture (STMicroelectronics STM32)
-> Processor model (STM32F401)
-> Bootloader offset (32Kib bootloader)
-> Clock Reference (8 MHz crystal)
-> Communication interface (Serial (on USART2 PA3/PA2))
-> (250000) Baud rate for serial port
-> () GPIO pins to set at micro-controller startup
+> [ * ] Enable extra low-level configuration options
+> 
+> - **Micro-controller Architecture**: STMicroelectronics STM32
+> - **Processor model**: STM32F401
+> - **Bootloader offset**: 32Kib bootloader
+> - **Clock Reference**: 8 MHz crystal
+> - **Communication interface**: Serial (on USART2 PA3/PA2)
+> - **Baud rate for serial port**: 250000
+> - **GPIO pins to set at micro-controller startup**
 
 ![](screenshots/Pasted_image_20241215233231.png)
 
