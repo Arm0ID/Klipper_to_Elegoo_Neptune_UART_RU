@@ -113,8 +113,10 @@ scp biqu@192.168.0.161:~/klipper/out/klipper.bin e:\prog\klipper_n3pro
 ### 3. Подключаем принтер к одноплатнику по UART
 На моей *BTT Pi* есть гребенка GPIO разъемов:
 ![](screenshots/GPIO_bttPi.png)
+
 И на принтере разъем *J17*:
-![[Pasted image 20241218021542.png]]
+![](screenshots/Pasted_image_20241218021542.png)
+
 А соединять нужно по принципу:
 
 | Пины Robin Nano | Пины GPIO BTT Pi |
@@ -172,3 +174,5 @@ console=serial
 3. Нажимаем `Ctrl` + `X` - чтобы выйти из редактора,
 4. Пишем `reboot` - чтобы перезагрузить одноплатник.
 
+## Источник
+!(Тыц)[https://www.printables.com/model/841472-elegoo-neptune-3-pro-klipper-upgrade-with-btt-pi-v]
