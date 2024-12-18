@@ -38,7 +38,7 @@ ssh biqu@192.168.0.161
 * `192.168.0.161` - адрес одноплатника в локальной сети.
 
 Далее он запросит пароль, который тоже `biqu` - и мы подключились, будет выведен некий логотип платы/ОС.
-!()[screenshots/Pasted_image_20241218010637.png]
+![](screenshots/Pasted_image_20241218010637.png)
 
 #### 2. make прошивки под UART
 Теперь нас ждет этап сборки/компиляции прошивки, который будет исполнять сам *linux* - это нужно, чтобы у нас не было потом ошибки `mcu protol error`, которая высвечивается на главной странице, когда версии *Klipper*-а и *mcu*(платы принтера) не совпадают.
@@ -56,6 +56,7 @@ make menuconfig
 ```
 4. Настроим конфигуратор:
 		Разные версии Klipper-а будут слегка отличаться, но основные пункты останутся:
+
 > [ * ]Enable extre low-level configuration options
 > Micro-controller Architecture (STMicroelectronics STM32)
 > Processor model (STM32F401)
@@ -64,7 +65,8 @@ make menuconfig
 > Communication interface (Serial (on USART2 PA3/PA2))
 > (250000) Baud rate for serial port
 > () GPIO pins to set at micro-controller startup
-![[screenshots/Pasted image 20241215233231.png]]
+
+![](screenshots/Pasted_image_20241215233231.png)
 
 5. Сохраним и соберем прошивку
 	* После того, как Вы настроили *конфигуратор* нужно будет выйти, сохранив изменения: нажимаем `Q` и `Y`.
@@ -105,7 +107,7 @@ scp biqu@192.168.0.161:~/klipper/out/klipper.bin e:\prog\klipper_n3pro
 
 ### 3. Подключаем принтер к одноплатнику по UART
 На моей *BTT Pi* есть гребенка GPIO разъемов:
-![[GPIO_bttPi.png]]
+![](screenshots/GPIO_bttPi.png)
 И на принтере разъем *J17*:
 ![[Pasted image 20241218021542.png]]
 А соединять нужно по принципу:
